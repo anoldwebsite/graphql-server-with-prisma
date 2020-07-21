@@ -1,4 +1,3 @@
-const { info } = require("console");
 const prismaSchema = require("../generated/prisma-client/prisma-schema");
 const { prisma } = require("../generated/prisma-client");
 
@@ -8,7 +7,7 @@ const resolvers = {
         collection: (root, { id }, ctx) => ctx.prisma.collection({ id }),
         getCollectionByTitle: (root, { title }, ctx) => ctx.prisma.collection({ title }),
     },
-//We have written some mutations to update data
+    //We have written some mutations to update data
     Mutation: {
         createCollection: (root, { title }, { prisma }) => {
             return prisma.createCollection({ title });
