@@ -201,6 +201,7 @@ export type MutationType = "CREATED" | "UPDATED" | "DELETED";
 
 export type CollectionWhereUniqueInput = AtLeastOne<{
   id: Maybe<ID_Input>;
+  title?: Maybe<String>;
 }>;
 
 export interface ItemWhereInput {

@@ -4,6 +4,8 @@ https://eu1.prisma.sh/anoldwebsite-760554/clothstoreprisma/dev/_admin
 
 Local host: Use command node src/index.js
 http://localhost:4000/
+
+Video tutorial made during this project: https://www.youtube.com/watch?v=1TnBAf0MfDg 
 ///////////////////////////////////////
 mutation createItem {
   createItem(name: "newItem2", price: 200, imageUrl: "some url 2", collectionId: "ckcvvpuh55ib80973umexvwd3") {

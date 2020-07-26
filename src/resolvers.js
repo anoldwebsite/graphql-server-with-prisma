@@ -5,6 +5,7 @@ const resolvers = {
     Query: {
         collections: (root, args, ctx, info) => ctx.prisma.collections({}, info),
         collection: (root, { id }, ctx) => ctx.prisma.collection({ id }),
+        collection: (root, { title }, ctx) => ctx.prisma.collection({ title }),
         getCollectionByTitle: (root, { title }, ctx) => ctx.prisma.collection({ title }),
     },
     //We have written some mutations to update data

@@ -5,7 +5,7 @@ type User {
 
 type Collection {
   id: ID! @id
-  title: String!
+  title: String! @unique
   items: [Item!]!
 }
 

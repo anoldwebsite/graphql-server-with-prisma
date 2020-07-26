@@ -148,6 +148,7 @@ input CollectionWhereInput {
 
 input CollectionWhereUniqueInput {
   id: ID
+  title: String
 }
 
 type Item {
